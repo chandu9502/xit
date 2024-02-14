@@ -13,7 +13,7 @@
         font-size: 20px;
     }
    .container{
-    background-color: whitesmoke;
+    background-color: antiquewhite;
     padding-top: 0px;
     margin-left: 200px;
     width: 1000px;
@@ -46,34 +46,18 @@
     width: 300px;
    }
  #i{
-    margin-left: 100px;
-    
+    padding-left: 100px;
+    ;
  }
  #i input{
-    width:10px;
+    width:100px;
     margin: auto;
  }
-#k,#l,#m,#n,#o,#p{
-    display: inline-block;
-}
-#m{
-    margin-left: 100px;
-    margin-right: 55px;
-}
-#o{
-    margin-left: 100px;
-    margin-right: 45px;
-}
 
-#k{
-    margin-left: 100px;
-    margin-right: 50px;
-}
  
- .ul {
+ * input,select{
     width:200px;
     height: 20px;
-    border-radius: 10px;
  }
    
   #j{
@@ -83,11 +67,9 @@
     
   }
   #j button{
-    background-color: rgb(241, 241, 243);
+    background-color: rgb(128, 128, 189);
     width: 150px;
     height: 50px;
-    margin-left: 120px;
-    border-radius: 10px;
   }
   
 </style>
@@ -99,58 +81,49 @@
   <p>Want to advertise on Tumblr?Great,your in right place.We just need to know a little more about you. </p>
   <form>
  <div id="a"><h3>*First Name</h3>
-    <input type="text" class="ul">
+    <input type="text">
 </div>
  <div id="b"><h3>*Last Name</h3>
-<input type="text" class="ul"></div>
+<input type="text"></div>
 <br>
 <div id="c">
     <h3>*Company</h3>
-    <input type="text" class="ul"></div>
+    <input type="text"></div>
     <div id="d">
         <h3>*Country</h3>
-        <select class="ul">
+        <select>
         <option value=".">Select....</option>
         </select>
     </div>
 <br>
 <div id="e">
     <h3>*Email</h3>
-    <input type="email"class="ul">
+    <input type="email">
 </div>
 <div id="f">
     <h3>*Phone Number</h3>
-    <input type="number"class="ul">
+    <input type="number">
 </div>
 <br>
 <div id="g">
     <h3>URL</h3>
-    <input type="url" class="ul">
+    <input type="url">
 </div>
 <div id="h">
     <h3>Website URL</h3>
-    <input type="url" class="ul">
+    <input type="url">
 </div>
 <div id="i">
     <h3>What is your Monthly adverting budegt?</h3>
-<select class="ul">
+<select>
     <option value=".">Select....</option>
 </select>
-<h3>What can we help you with ?</h3></div>
+<h3>What can we help you with ?</h3>
+<input type="checkbox">ABC
+<input type="checkbox">DFE
 <br>
-<div id="k">
-<input type="checkbox">ABC</div>
-<div id="l">
-<input type="checkbox">DFE</div><br>
-<div id="m">
-<input type="checkbox">GHI</div>
-<div id="n">
-    <input type="checkbox">JKL</div><br>
-    <div id="o">
-        <input type="checkbox">MNO</div>
-        <div id="p">
-            <input type="checkbox">PQR</div><br>
-
+<input type="checkbox">GHI
+</div>
 <div id="j">
 <button type="submit" >Submit</button>
 </div>

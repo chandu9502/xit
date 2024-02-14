@@ -15,7 +15,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        #a,#b,#c,#d,#e,#f{
+        #a,#b,#c{
             height: 100px;
             width: 400px;
             padding:10px;
@@ -25,7 +25,15 @@
          
            margin: auto;
         }
-        
+        #d,#e,#f{
+            height: 100px;
+            width: 400px;
+            padding: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            margin: auto;
+            
+        }
         h5,p{
             text-align: center;
         }
@@ -41,12 +49,10 @@
             font-size: 10px;
             font-style: oblique;
             padding:10px 70px;
-            background-color: rgb(235, 235, 236);
-            border-radius: 0px;
+            background-color: rgb(102, 114, 184);
           }
           .s2{
             background-color: rgb(176, 173, 173);
-            
             padding-top: 10px;
             padding-bottom: 10px;
           }
@@ -78,7 +84,7 @@
                 <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita id explicabo non eaque quis unde perferendis .</h6>
                 <h5><a style="text-decoration: none;"  href="url">Read More</a></h5>
                 </div>
-                <br>
+                
              <div id="d">
                 <h1></h1>
                     <img src="https://media.istockphoto.com/id/953520974/vector/tick-mark-approved-icon-shield-vector-on-white-background.jpg?s=612x612&w=0&k=20&c=lalLRIXMNvWP6JuqHjoz_h0q-iQXSgOgI5pztVZ6SN8=" width="50" height="50" class="round">
