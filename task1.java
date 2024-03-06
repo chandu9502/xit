@@ -52,8 +52,6 @@ class task1{
     q.add(al.get(id));
     al.remove(id);
     ck2(q,k,al);
-
-
 }
    
     public static void main(String[] args) {
@@ -74,15 +72,9 @@ class task1{
 
         
        HashMap<Integer,Integer>hm=new HashMap<>();
-        Queue<Integer>q=new LinkedList<>();
+    Queue<Integer>q=new LinkedList<>();
         ck2(q,c,al);
-       for(int i:al){
-
-        hm.put(i,Math.abs(i-c));
-       }
-       ArrayList<Integer>t=new ArrayList<>(hm.keySet());
-       Collections.sort(t,(a,b)->{return hm.get(a)-hm.get(b);});
-
+       
         System.out.println(q);
 
 
