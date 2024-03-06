@@ -8,9 +8,19 @@ function CreateUser() {
     const[email,setEmail]=useState()
     const[number,setNumber]=useState()
     const navigate=useNavigate()
-    
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const mobileRegex = /^\+?[0-9\s-]{10}$/
     const submitHandler = (e) => {
         e.preventDefault();
+        if(name.length<8){
+          alert('names should be min.8 letters')
+        }
+        if(!emailRegex.test(email)){
+          alert('Enter valid email')
+        }
+        if(!mobileRegex.test(number)){
+          alert('Enter valid phn number')
+        }
         axios.post("http://localhost:3001/createuser", { eno, name, email, number })
             .then(response => {
                 console.log(response.data);
@@ -22,9 +32,9 @@ function CreateUser() {
     
     
   return (
-   <div className="container align-items-center">
+   <div className="container  bg-warning  align-items-center">
     <h2 className='text-center m-2'>Add User!!</h2>
-    <div className='d-flex bg-warning justify-content-center mt-1 ' >
+    <div className='d-flex justify-content-center mt-1 ' >
         
     <form onSubmit={submitHandler}>
      <div className="mb-3">  
